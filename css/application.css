@@ -44,10 +44,6 @@
 * {
   box-sizing: border-box; }
 
-/* Links */
-a {
-  text-decoration: none; }
-
 /* Blockquote */
 .blockquote {
   border-left: 6px solid #5BE0C0;
@@ -67,6 +63,33 @@ ul {
 
 ul li {
   margin-left: 0; }
+
+/* Google Fonts */
+/* Font Styles */
+.container {
+  font-size: 1em;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #808080;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.0125em; }
+
+.headline--primary {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.0125em;
+  font-weight: 800;
+  color: #5BE0C0;
+  line-height: 1.1; }
+
+.headline--secondary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #808080; }
+
+.link {
+  color: #48defe;
+  text-decoration: none; }
 
 .btn--default {
   background-color: #55DEFD; }
@@ -121,6 +144,38 @@ ul li {
   border-left: none;
   margin-bottom: 35px;
   padding: 15px; }
+
+.img--logo {
+  display: block;
+  margin: 0 auto; }
+
+.img--frame {
+  border: 1px solid #c0c0c0;
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  max-width: 100%; }
+
+.img--avatar {
+  padding: 10px; }
+
+.nav__item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.nav__item a {
+  color: #797e83;
+  font-weight: 300;
+  padding: 10px 20px;
+  border-radius: 0.2em;
+  text-decoration: none; }
+
+.nav__item a:hover {
+  background-color: #4fe3c2;
+  color: #fff; }
 
 .container {
   padding: 2em; }
@@ -212,9 +267,6 @@ ul li {
     justify-content: center;
     margin: 0 auto; }
 
-  .img--logo {
-    float: left; }
-
   .grid__col--3 {
     display: flex;
     flex-direction: column;
@@ -294,10 +346,20 @@ ul li {
     padding: 10px; }
 
   .img--avatar {
-    margin-right: 50px; } }
+    margin-right: 50px; }
+
+  .img--logo {
+    float: left; } }
 @media only screen and (min-width: 1024px) {
   .container {
     margin: 40px; }
+
+  .grid__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; }
 
   .grid__col--3 {
     display: flex;
@@ -338,7 +400,7 @@ ul li {
     flex-direction: column;
     flex-basis: 100%;
     justify-content: center;
-    align-self: flex-start;
+    align-self: center;
     padding-right: 90px; }
 
   .grid__col--9 {
@@ -347,6 +409,10 @@ ul li {
     flex-basis: 100%;
     align-items: center;
     justify-content: space-around; }
+
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row; }
 
   .nav {
     display: flex;
@@ -361,89 +427,18 @@ ul li {
     float: left; }
 
   .img--avatar {
-    margin-right: 100px; } }
-.img--logo {
-  display: block;
-  margin: 0 auto; }
+    margin-right: 100px; }
 
-.img--frame {
-  border: 1px solid #c0c0c0;
-  padding: 1em;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  max-width: 100%; }
+  .btn--default.theme__colors {
+    margin-right: 20px; }
 
-.img--avatar {
-  padding: 10px; }
+  .btn--success.theme__colors {
+    margin-right: 20px; }
 
-.nav__item {
-  list-style-type: none;
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
-  text-decoration: none; }
-  .nav__item a {
-    color: #808080;
-    text-align: center;
-    width: 100%;
-    display: block;
-    padding: 5px; }
-    .nav__item a:visited {
-      color: #808080; }
-    .nav__item a:hover {
-      color: #FFF;
-      width: 100%;
-      display: block;
-      background: #5BE0C0;
-      padding: 10px;
-      border-radius: 5px; }
-    .nav__item a:active {
-      color: #808080;
-      width: 100%;
-      display: block; }
+  .btn--error.theme__colors {
+    margin-right: 20px; }
 
-/* Google Fonts */
-/* Font Styles */
-body {
-  font-size: 1em;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #808080;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.0125em; }
-
-p {
-  margin-bottom: 2em;
-  margin-top: 2em; }
-  p a:link {
-    color: #55DEFD;
-    text-decoration: none;
-    font-weight: 600; }
-  p a:visited {
-    color: #333; }
-  p a:hover {
-    color: #5BE0C0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  color: #5BE0C0;
-  letter-spacing: 0.0125em;
-  margin-bottom: 1em;
-  margin-top: 1em; }
-
-.headline--primary {
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.0125em;
-  font-weight: 800;
-  color: #5BE0C0;
-  line-height: 1.1; }
-
-.headline--secondary {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  color: #808080;
-  margin-bottom: 2em; }
+  .btn--warning.theme__colors {
+    margin-right: 20px; } }
 
 /*# sourceMappingURL=application.css.map */

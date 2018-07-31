@@ -2,23 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
 
 /* Font Styles */
-body {
+.container {
   @include text(1em, 1.2, 300, $color: $text-color);
   font-family: $body-font;
   letter-spacing: $letter-spacing;
-}
-p {
-  @include bodylinks($link: $primary-color, $visit: $secondary-color, $hover: $secondary-color, $active: $primary-color);
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font;
-  font-weight: 800;
-  color: $secondary-color;
-  letter-spacing: $letter-spacing;
-  margin-bottom: 1em;
-  margin-top: 1em;
 }
 .headline--primary {
   font-family: $header-font;
@@ -32,5 +19,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1em;
   font-weight: 300;
   color: $text-color;
-  margin-bottom: 2em;
+}
+.link {
+  color: #48defe;
+  text-decoration: none;
 }

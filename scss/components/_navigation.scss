@@ -1,9 +1,19 @@
 .nav__item {
-  @include navlinks($link: $text-color, $visit: $text-color, $hover: $white, $active: $text-color);
   @extend %centered;
   list-style-type: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
-  text-decoration: none;
 }
+.nav__item a {
+    color: #797e83;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 0.2em;
+    text-decoration: none;
+  }
+  .nav__item a:hover {
+      background-color: #4fe3c2;
+      color: #fff;
+    }
