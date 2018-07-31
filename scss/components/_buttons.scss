@@ -1,25 +1,44 @@
 .btn--default {
   background-color: $primary-color;
   @extend %button;
-  margin-bottom: 1.5em;
 }
-.btn--success {
+.btn--success.theme__colors {
   background-color: $success;
   @extend %button;
-  margin-bottom: 1.5em;
+
 }
-.btn--error {
+.btn--error.theme__colors {
   background-color: $error;
   @extend %button;
-  margin-bottom: 1.5em;
+
 }
-.btn--warning {
+.btn--warning.theme__colors {
   background-color: $warning;
   @extend %button;
-  margin-bottom: 1.5em;
+
 }
-.btn--info {
+.btn--info.theme__colors {
   background-color: $info;
   @extend %button;
-  margin-bottom: 1.5em;
+
+}
+.btn--default.theme__colors {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btn--success.theme__colors {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btn--error.theme__colors {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btn--warning.theme__colors {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btn--info.theme__colors {
+  margin-bottom: 20px;
+  width: 100%;
 }

@@ -1,9 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
-/* Container */
-.container {
 
-}
 /* Font Styles */
 body {
   @include text(1em, 1.2, 300, $color: $text-color);
