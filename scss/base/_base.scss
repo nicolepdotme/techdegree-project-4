@@ -1,0 +1,18 @@
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Blockquote */
+
+.blockquote {
+  border-left: 6px solid $secondary-color;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-left: 25px;
+  border-radius: $br5;
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}

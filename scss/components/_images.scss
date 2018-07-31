@@ -1,0 +1,13 @@
+.img--logo {
+  @extend %center-img;
+  @extend %logo-img;
+}
+.img--frame {
+  border: 1px solid #c0c0c0;
+  padding: 1em;
+  @extend %content-img;
+}
+.img--avatar {
+  @extend %center-img;
+  padding: 10px;
+}

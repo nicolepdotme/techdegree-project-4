@@ -1,0 +1,38 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
+/* Container */
+.container {
+  padding: 30px;
+}
+/* Font Styles */
+body {
+  @include text(1em, 1.2, 300, $color: $text-color);
+  font-family: $body-font;
+  letter-spacing: $letter-spacing;
+}
+p {
+  @include bodylinks($link: $primary-color, $visit: $secondary-color, $hover: $secondary-color, $active: $primary-color);
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  font-weight: 800;
+  color: $secondary-color;
+  letter-spacing: $letter-spacing;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.headline--primary {
+  font-family: $header-font;
+  letter-spacing: $letter-spacing;
+  font-weight: 800;
+  color: $secondary-color;
+  line-height: 1.1;
+}
+.headline--secondary {
+  font-family: $header-font;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: $text-color;
+}

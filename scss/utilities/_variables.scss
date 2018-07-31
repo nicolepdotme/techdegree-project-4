@@ -1,0 +1,29 @@
+/* Color Variables */
+
+$primary-color: #55DEFD; // light blue
+$secondary-color: #5BE0C0; // teal
+$text-color: #808080; // grey
+$success: #3CB371; // medium sea green
+$error: #EB8E94; // red
+$warning: #F27D62; // orange
+$info: #8C7EB4; // purple
+$white: #FFF;
+$black: #000;
+$dark-grey: #333;
+
+/* Font Variables */
+
+$font-stack: 'Open Sans', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Open Sans', sans-serif;
+$letter-spacing: 0.0125em;
+$shadow: rgba($dark-grey, .8);
+
+/* Border Radius */
+$br5: 5px;
+
+/* Nav Links */
+$link: $text-color;
+$visit: $text-color;
+$hover: $secondary-color;
+$active: $text-color;

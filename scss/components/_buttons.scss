@@ -1,0 +1,21 @@
+.btn--default {
+  background-color: $primary-color;
+  @extend %button;
+}
+.btn--success {
+  background-color: $success;
+  @extend %button;
+}
+.btn--error {
+  background-color: $error;
+  @extend %button;
+}
+.btn--warning {
+  background-color: $warning;
+  @extend %button;
+}
+.btn--info {
+  background-color: $info;
+  @extend %button;
+}
+//.theme__colors

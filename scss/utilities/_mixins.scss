@@ -1,0 +1,46 @@
+/* Text */
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin navlinks ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    width: 100%;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+      display: block;
+      background: $secondary-color;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-radius: $br5;
+      width: 100%;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin bodylinks ($link, $visit, $hover, $active) {
+  a {
+    &:link {
+      color: $primary-color;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    &:visited {
+      color: $dark-grey;
+    }
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

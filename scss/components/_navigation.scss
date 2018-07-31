@@ -1,0 +1,11 @@
+.nav__item {
+  @include navlinks($link: $text-color, $visit: $text-color, $hover: $white, $active: $text-color);
+  @extend %centered;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

@@ -1,0 +1,66 @@
+/* Center Text */
+
+%centered {
+  text-align: center;
+}
+
+/* Centered Image */
+%center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Image Margins */
+%content-img {
+  margin: 1.5em;
+}
+%logo-img {
+  margin-top: .5em;
+  margin-bottom: 2em;
+}
+
+%button {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  padding: .75em;
+  border-radius: 5px;
+  width: 100%;
+  @extend %centered;
+  margin-top: 1em;
+  outline: none;
+}
+
+/* Top Border */
+
+%t-border {
+  border-top: 2px solid #55DEFD;
+}
+
+/* Containers */
+
+%content {
+  width: 75%;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin: auto;
+  max-width: 960px;
+}
+
+/* Columns */
+
+%columns {
+  width: 46.5%;
+}
+
+/* Float Clearfix */
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
