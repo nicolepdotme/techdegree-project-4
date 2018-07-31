@@ -1,11 +1,16 @@
 .img--logo {
-  @extend %center-img;
   @extend %logo-img;
+  display: block;
+  margin: 0 auto;
 }
 .img--frame {
   border: 1px solid #c0c0c0;
   padding: 1em;
-  @extend %content-img;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  @extend %center-img;
+  max-width: 100%;
+  @extend %clearfix;
 }
 .img--avatar {
   @extend %center-img;

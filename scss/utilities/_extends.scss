@@ -20,16 +20,14 @@
 }
 
 %button {
-  display: block;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
   border: none;
   padding: .75em;
   border-radius: 5px;
-  width: 100%;
-  @extend %centered;
-  margin-top: 1em;
+  width: 160px;
+  margin: 0 auto;
   outline: none;
 }
 

@@ -7,12 +7,105 @@ a {
 
 .blockquote {
   border-left: 6px solid $secondary-color;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding-left: 25px;
   border-radius: $br5;
   font-size: 1.5em;
   font-style: italic;
   margin-bottom: 2em;
   margin-top: 2em;
+}
+
+/* Lists */
+ul {
+  margin-left: 0;
+  padding-left: 0px;
+}
+ul li {
+  margin-left: 0;
+}
+
+/* Media Queries*/
+@media (min-width: 768px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-basis: 100%;
+}
+  }
+@media (min-width: 1024px) {
+  .container {
+    margin: 40px;
+  }
+  .grid__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .grid__col--3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-basis: 100%;
+  }
+  .grid__col--4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .grid__col--5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    flex-basis: 100%;
+  }
+  .grid__col--6 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .grid__col--7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    flex-basis: 100%;
+  }
+  .grid__col--8 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    align-self: flex-start;
+    padding-right: 90px;
+  }
+  .grid__col--9 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-basis: 100%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+  .img--logo {
+    float: left;
+  }
 }

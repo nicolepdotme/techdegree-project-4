@@ -10,21 +10,26 @@
 @mixin navlinks ($link, $visit, $hover, $active) {
   a {
     color: $link;
+    text-align: center;
     width: 100%;
+    display: block;
+    padding: 5px;
     &:visited {
       color: $visit;
     }
     &:hover {
       color: $hover;
+      width: 100%;
       display: block;
       background: $secondary-color;
       padding-bottom: 10px;
       padding-top: 10px;
       border-radius: $br5;
-      width: 100%;
     }
     &:active {
       color: $active;
+      width: 100%;
+      display: block;
     }
   }
 }
@@ -43,4 +48,11 @@
       color: $secondary-color;
     }
   }
+}
+
+@mixin flexbox($direction, $justify: null, $alignment: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $alignment;
 }

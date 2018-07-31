@@ -1,1 +1,81 @@
+.container {
+  padding: 2em;
+}
+.grid__row {
+  margin-bottom: 2em;
+}
 
+//.grid__col--2 {
+//
+//}
+.grid__col--3.theme__colors {
+  border: none;
+  border-radius: $br5;
+  background-color: #d09cd9;
+  padding: 10px;
+  margin: 5px;
+  color: $dark-grey;
+}
+.grid__col--4.theme__colors {
+  @include flexbox($direction: row, $justify: flex-start, $alignment: center);
+  flex-basis: 100%;
+  border: none;
+  border-radius: $br5;
+  background-color: #8EEDFC;
+  padding: 10px;
+  margin: 5px;
+  color: $dark-grey;
+}
+.grid__col--5.theme__colors {
+  border: none;
+  border-radius: $br5;
+  background-color: #82DC9E;
+  padding: 10px;
+  margin: 5px;
+  color: $dark-grey;
+}
+.grid__col--6.theme__colors {
+  border: none;
+  border-radius: $br5;
+  background-color: #4DA2BB;
+  padding: 10px;
+  margin: 5px;
+  color: $dark-grey;
+}
+.grid__col--7.theme__colors {
+  border: none;
+  border-radius: $br5;
+  background-color: #E6A3A1;
+  padding: 10px;
+  margin: 5px;
+  color: $dark-grey;
+}
+.grid__col--8.theme__colors {
+  border: none;
+  border-radius: $br5;
+  background-color: #FD9D85;
+  padding: 10px;
+  margin: 5px;
+  color: $dark-grey;
+}
+.grid__col--9 {
+  display: block;
+  width: 100%;
+}
+//.grid__col--10
+//.grid__col--11
+.grid__col--12.theme__colors {
+  border: none;
+  border-radius: $br5;
+  background-color: #82E8CE;
+  padding: 10px;
+  margin: 5px;
+  color: $dark-grey;
+}
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+//.centered
+//.theme__colors

@@ -1,21 +1,25 @@
 .btn--default {
   background-color: $primary-color;
   @extend %button;
+  margin-bottom: 1.5em;
 }
 .btn--success {
   background-color: $success;
   @extend %button;
+  margin-bottom: 1.5em;
 }
 .btn--error {
   background-color: $error;
   @extend %button;
+  margin-bottom: 1.5em;
 }
 .btn--warning {
   background-color: $warning;
   @extend %button;
+  margin-bottom: 1.5em;
 }
 .btn--info {
   background-color: $info;
   @extend %button;
+  margin-bottom: 1.5em;
 }
-//.theme__colors

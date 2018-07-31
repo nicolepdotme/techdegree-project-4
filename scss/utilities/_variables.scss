@@ -14,16 +14,23 @@ $dark-grey: #333;
 /* Font Variables */
 
 $font-stack: 'Open Sans', sans-serif;
-$body-font: 'Open Sans', sans-serif;
+$body-font: $font-stack;
 $header-font: 'Open Sans', sans-serif;
 $letter-spacing: 0.0125em;
 $shadow: rgba($dark-grey, .8);
 
 /* Border Radius */
+
 $br5: 5px;
 
 /* Nav Links */
+
 $link: $text-color;
 $visit: $text-color;
 $hover: $secondary-color;
 $active: $text-color;
+
+/* Breakpoints */
+
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
