@@ -1,61 +1,62 @@
+/* Container and Grid */
+
 .container {
   padding: 2em;
+  line-height: 1.7em;
 }
 .grid__row {
+  @include flexbox($direction: column, $justify: center, $alignment: flex-start);
   margin-bottom: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   flex-basis: 100%;
 }
 .grid__col--3.theme__colors {
-  border: none;
+  border: $bnone;
   border-radius: $br5;
-  background-color: #d09cd9;
-  padding: 10px;
-  margin: 5px;
+  background-color: $wisteria;
+  padding: $p10;
+  margin: $m5;
   color: $dark-grey;
 }
 .grid__col--4.theme__colors {
   @include flexbox($direction: row, $justify: flex-start, $alignment: center);
   flex-basis: 100%;
-  border: none;
+  border: $bnone;
   border-radius: $br5;
-  background-color: #8EEDFC;
-  padding: 10px;
-  margin: 5px;
+  background-color: $anakiwa;
+  padding: $p10;
+  margin: $m5;
   color: $dark-grey;
 }
 .grid__col--5.theme__colors {
-  border: none;
+  border: $bnone;
   border-radius: $br5;
-  background-color: #82DC9E;
-  padding: 10px;
-  margin: 5px;
+  background-color: $algae-green;
+  padding: $p10;
+  margin: $m5;
   color: $dark-grey;
 }
 .grid__col--6.theme__colors {
-  border: none;
+  border: $bnone;
   border-radius: $br5;
-  background-color: #4DA2BB;
-  padding: 10px;
-  margin: 5px;
+  background-color: $fountain;
+  padding: $p10;
+  margin: $m5;
   color: $dark-grey;
 }
 .grid__col--7.theme__colors {
-  border: none;
+  border: $bnone;
   border-radius: $br5;
-  background-color: #E6A3A1;
-  padding: 10px;
-  margin: 5px;
+  background-color: $cashmere;
+  padding: $p10;
+  margin: $m5;
   color: $dark-grey;
 }
 .grid__col--8.theme__colors {
-  border: none;
+  border: $bnone;
   border-radius: $br5;
-  background-color: #FD9D85;
-  padding: 10px;
-  margin: 5px;
+  background-color: $tangerine;
+  padding: $p10;
+  margin: $m5;
   color: $dark-grey;
 }
 .grid__col--9 {
@@ -63,11 +64,11 @@
   width: 100%;
 }
 .grid__col--12.theme__colors {
-  border: none;
+  border: $bnone;
   border-radius: $br5;
-  background-color: #82E8CE;
-  padding: 10px;
-  margin: 5px;
+  background-color: $riptide;
+  padding: $p10;
+  margin: $m5;
   color: $dark-grey;
 }
 .grid__col--12 {
@@ -77,8 +78,12 @@
   flex-basis: 100%;
 }
 
-/* Media Queries*/
+/* Beastly Media Queries*/
+
+// no, seriously. these things are LONG. buckle up!
+
 @media only screen and (min-width: $breakpoint-md) {
+  @include tablet;
   .grid__row {
     display: flex;
     flex-direction: row;
@@ -162,7 +167,7 @@
     justify-content: center;
   }
   .nav__item {
-    padding: 10px;
+    padding: $p10;
   }
   .img--avatar {
     margin-right: 50px;
@@ -172,13 +177,12 @@
   }
 }
 @media only screen and (min-width: $breakpoint-lg) {
+  @include desktop;
   .container {
     margin: 5px 40px 5px 40px;
   }
   .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include flexbox($direction: column, $justify: flex-start, $alignment: flex-start);
     margin-top: -20px;
   }
   .grid__row {
@@ -247,7 +251,6 @@
   .img--logo {
     float: left;
   }
-
   .btn--default.theme__colors {
     margin-right: 20px;
   }

@@ -1,7 +1,8 @@
 /* Global Imports */
 /* Color Variables */
 /* Font Variables */
-/* Border Radius */
+/* Padding and Margins */
+/* Borders */
 /* Nav Links */
 /* Breakpoints */
 /* Center Text */
@@ -20,6 +21,7 @@
   margin-top: .5em;
   margin-bottom: 2em; }
 
+/* Buttons */
 .btn--default, .btn--success.theme__colors, .btn--error.theme__colors, .btn--warning.theme__colors, .btn--info.theme__colors {
   text-transform: uppercase;
   font-weight: 600;
@@ -40,7 +42,12 @@
   display: table;
   clear: both; }
 
+/* Flexbox */
+/* Media Queries */
 /* Text */
+/* Links */
+/* Flexbox */
+/* Universal Selectors */
 * {
   box-sizing: border-box; }
 
@@ -91,6 +98,7 @@ ul li {
   color: #48defe;
   text-decoration: none; }
 
+/* Button Styling and Theme Colors */
 .btn--default {
   background-color: #55DEFD; }
 
@@ -126,6 +134,7 @@ ul li {
   margin-bottom: 20px;
   width: 100%; }
 
+/* Form Styling */
 .form {
   display: flex;
   flex-direction: column;
@@ -143,7 +152,8 @@ ul li {
   border-right: none;
   border-left: none;
   margin-bottom: 35px;
-  padding: 15px; }
+  padding: 15px;
+  outline: none; }
 
 .img--logo {
   display: block;
@@ -159,6 +169,7 @@ ul li {
 .img--avatar {
   padding: 10px; }
 
+/* Navigation Styling */
 .nav__item {
   list-style-type: none;
   display: flex;
@@ -174,17 +185,20 @@ ul li {
   text-decoration: none; }
 
 .nav__item a:hover {
-  background-color: #4fe3c2;
-  color: #fff; }
+  background-color: #5BE0C0;
+  color: #FFF; }
 
+/* Container and Grid */
 .container {
-  padding: 2em; }
+  padding: 2em;
+  line-height: 1.7em; }
 
 .grid__row {
-  margin-bottom: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2em;
   flex-basis: 100%; }
 
 .grid__col--3.theme__colors {
@@ -258,7 +272,7 @@ ul li {
   justify-content: center;
   flex-basis: 100%; }
 
-/* Media Queries*/
+/* Beastly Media Queries*/
 @media only screen and (min-width: 768px) {
   .grid__row {
     display: flex;
@@ -358,6 +372,7 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     margin-top: -20px; }
 
   .grid__row {

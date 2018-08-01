@@ -1,3 +1,17 @@
+/* Media Queries */
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$breakpoint-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+
 /* Text */
 
 @mixin text($size, $l-height: null, $weight: null, $color: null) {
@@ -6,6 +20,7 @@
   font-weight: $weight;
   color: $color;
 }
+/* Links */
 
 @mixin navlinks ($link, $visit, $hover, $active) {
   a {
@@ -48,7 +63,7 @@
     }
   }
 }
-
+/* Flexbox */
 @mixin flexbox($direction, $justify: null, $alignment: null) {
   display: flex;
   flex-direction: $direction;

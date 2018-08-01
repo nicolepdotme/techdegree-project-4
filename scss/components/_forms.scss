@@ -1,9 +1,11 @@
+/* Form Styling */
+
 .form {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   outline: none;
-  border: none;
+  border: $bnone;
 }
 .form__label--hidden {
   display: none;
@@ -11,9 +13,10 @@
 .form__input {
   border-bottom: 5px solid $secondary-color;
   border-radius: $br5;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border-top: $bnone;
+  border-right: $bnone;
+  border-left: $bnone;
   margin-bottom: 35px;
   padding: 15px;
+  outline: none;
 }

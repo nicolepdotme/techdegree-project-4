@@ -1,3 +1,4 @@
+/* Button Styling and Theme Colors */
 .btn--default {
   background-color: $primary-color;
   @extend %button;
@@ -5,22 +6,18 @@
 .btn--success.theme__colors {
   background-color: $success;
   @extend %button;
-
 }
 .btn--error.theme__colors {
   background-color: $error;
   @extend %button;
-
 }
 .btn--warning.theme__colors {
   background-color: $warning;
   @extend %button;
-
 }
 .btn--info.theme__colors {
   background-color: $info;
   @extend %button;
-
 }
 .btn--default.theme__colors {
   margin-bottom: 20px;

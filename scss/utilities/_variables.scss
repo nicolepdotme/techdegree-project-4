@@ -3,34 +3,59 @@
 $primary-color: #55DEFD; // light blue
 $secondary-color: #5BE0C0; // teal
 $text-color: #808080; // grey
+
+// button colors
 $success: #3CB371; // medium sea green
 $error: #EB8E94; // red
 $warning: #F27D62; // orange
 $info: #8C7EB4; // purple
+
+// utilty colors
 $white: #FFF;
 $black: #000;
 $dark-grey: #333;
 
+// grid theme colors
+$wisteria: #d09cd9; // light wisteria (lavendar)
+$anakiwa: #8EEDFC; // anakiwa (light blue)
+$algae-green: #82DC9E; // light green
+$fountain: #4DA2BB; // steel blue
+$cashmere: #E6A3A1; // blush pink
+$tangerine: #FD9D85; // blush orange
+$riptide: #82E8CE; // light teal
+
+// navigation colors
+$stone: #797e83; // grey
+
 /* Font Variables */
 
 $font-stack: 'Open Sans', sans-serif;
+// Because Helvetica Neue ain't free
+
 $body-font: $font-stack;
 $header-font: 'Open Sans', sans-serif;
 $letter-spacing: 0.0125em;
 $shadow: rgba($dark-grey, .8);
 
-/* Border Radius */
+/* Padding and Margins */
 
-$br5: 5px;
+$p10: 10px; // 10px padding
+$m5: 5px; // 5px margin
+
+/* Borders */
+
+$br5: 5px; // radius 5px
+$bnone: none; // no border
 
 /* Nav Links */
 
-$link: $text-color;
-$visit: $text-color;
-$hover: $secondary-color;
-$active: $text-color;
+$link: $text-color; // grey
+$visit: $text-color; // grey
+$hover: $secondary-color; // teal
+$active: $text-color; // grey
 
 /* Breakpoints */
 
 $breakpoint-md: 768px;
+$tablet: 950px;
 $breakpoint-lg: 1024px;
