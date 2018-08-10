@@ -7,16 +7,20 @@
 /* Blockquote */
 
 .blockquote {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-self: center;
   border-left: 6px solid $secondary-color;
-  margin-left: 40px;
-  margin-right: 40px;
   padding-left: 25px;
   border-radius: $br5;
   font-size: 1.5em;
   font-style: italic;
-  font-color: $dark-grey;
+  color: $dark-grey;
   margin-bottom: 2em;
   margin-top: 2em;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 /* Lists */

@@ -1,13 +1,11 @@
 /* Form Styling */
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-basis: 100%;
+  display: block;
+  margin: 0 auto;
   outline: none;
   border: $bnone;
+  width: 400px;
 }
 .form__label--hidden {
   display: none;
@@ -21,7 +19,5 @@
   margin-bottom: 35px;
   padding: 15px;
   outline: none;
-}
-legend {
-  margin-left: -30px;
+  width: 100%;
 }

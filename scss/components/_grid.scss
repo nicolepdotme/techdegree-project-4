@@ -5,12 +5,10 @@
   line-height: 1.7em;
 }
 .grid__row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2em;
-  flex-basis: 100%;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+
 }
 .grid__col--3.theme__colors {
   border: $bnone;
@@ -19,7 +17,7 @@
   padding: $p10;
   margin: $m5;
   color: $dark-grey;
-  width: 290px;
+
 }
 .grid__col--4.theme__colors {
   @include flexbox($direction: row, $justify: flex-start, $alignment: flex-start);
@@ -30,10 +28,10 @@
   padding: $p10;
   margin: $m5;
   color: $dark-grey;
-  width: 290px;
 }
 .grid__col--4 {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -44,7 +42,7 @@
   padding: $p10;
   margin: $m5;
   color: $dark-grey;
-  width: 290px;
+
 }
 .grid__col--6.theme__colors {
   border: $bnone;
@@ -53,7 +51,7 @@
   padding: $p10;
   margin: $m5;
   color: $dark-grey;
-  width: 290px;
+
 }
 .grid__col--7.theme__colors {
   border: $bnone;
@@ -62,7 +60,7 @@
   padding: $p10;
   margin: $m5;
   color: $dark-grey;
-  width: 290px;
+
 }
 .grid__col--8.theme__colors {
   border: $bnone;
@@ -71,7 +69,7 @@
   padding: $p10;
   margin: $m5;
   color: $dark-grey;
-  width: 290px;
+
 }
 .grid__col--9 {
   display: block;
@@ -89,7 +87,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 290px;
   flex-basis: 100%;
 }
 
@@ -196,6 +193,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   }
+.form__input {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: $breakpoint-lg) {
   @include desktop;
@@ -256,6 +256,8 @@
   }
   .grid__col--12 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
   .nav {
     display: flex;
