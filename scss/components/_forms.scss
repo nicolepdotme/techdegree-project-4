@@ -3,6 +3,8 @@
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-basis: 100%;
   outline: none;
   border: $bnone;
@@ -19,4 +21,7 @@
   margin-bottom: 35px;
   padding: 15px;
   outline: none;
+}
+legend {
+  margin-left: -30px;
 }

@@ -1,7 +1,9 @@
 .img--logo {
   @extend %logo-img;
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
 }
 .img--frame {
   border: 1px solid #c0c0c0;
