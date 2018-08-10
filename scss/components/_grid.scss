@@ -8,6 +8,7 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 
 }
 .grid__col--3.theme__colors {
@@ -20,7 +21,7 @@
 
 }
 .grid__col--4.theme__colors {
-  @include flexbox($direction: row, $justify: flex-start, $alignment: flex-start);
+  @include flexbox($direction: row, $justify: center, $alignment: center);
   flex-basis: 100%;
   border: $bnone;
   border-radius: $br5;
@@ -222,12 +223,18 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .grid__col--4.theme__colors {
+    flex: 1;
+  }
   .grid__col--5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
     flex-basis: 100%;
+  }
+  .grid__col--5.theme__colors {
+    flex: 1;
   }
   .grid__col--6 {
     display: flex;
@@ -236,17 +243,26 @@
     flex-basis: 100%;
     justify-content: center;
   }
+  .grid__col--7.theme__colors.centered {
+      flex-grow: 0;
+      flex-basis: 50%;
+    }
   .grid__col--7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    flex-basis: 100%;
+  }
+  .grid__col--7.theme__colors {
+    flex: 2;
   }
   .grid__col--8 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .grid__col--8.theme__colors {
+    flex: 2;
   }
   .grid__col--9 {
     display: flex;

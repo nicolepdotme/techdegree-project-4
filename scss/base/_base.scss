@@ -7,10 +7,8 @@
 /* Blockquote */
 
 .blockquote {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: center;
-  align-self: center;
+  display: block;
+  text-align: left;
   border-left: 6px solid $secondary-color;
   padding-left: 25px;
   border-radius: $br5;
@@ -30,4 +28,8 @@ ul {
 }
 ul li {
   margin-left: 0;
+}
+p {
+  display: block;
+  text-align: left;
 }

@@ -7,15 +7,17 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
-}
-.nav__item a {
- color: $stone;
- font-weight: 300;
- padding: 10px 20px;
- border-radius: 0.2em;
- text-decoration: none;
+
+  a {
+    color: $stone;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 0.2em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
+    }
   }
-.nav__item a:hover {
-  background-color: $secondary-color;
-  color: $white;
 }
