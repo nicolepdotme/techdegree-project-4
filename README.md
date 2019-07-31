@@ -13,4 +13,4 @@
 * Add Sass maps for UI colors ☑️
 * Use NPM to add browser prefixes ☑️
 
-## See live demo: [Sass web style guide project](https://nicolepdev.github.io/techdegree-project-4/)
+## See live demo: [Sass web style guide project](https://fervent-rosalind-79a4fb.netlify.com/)
