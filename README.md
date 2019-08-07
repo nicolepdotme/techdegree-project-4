@@ -3,6 +3,11 @@
 ### Sass web style guide project for [Treehouse Front-End Techdegree](https://join.teamtreehouse.com/techdegree/)
 #### 📓 Instructor: Multiple - see Team Treehouse Front-end Techdegree link above
 #### 👩‍💻 Student: Nicole Peery
+
+## Project Overview:
+
+My challenge for this project was to create rules to style a web page using a set of given class names. I created a Sass project using partials, variables, extends, and mixins to apply the styles and classes to a style guide page.
+
 ## Tools/skills used:
 * HTML5
 * CSS3
