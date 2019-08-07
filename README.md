@@ -1,3 +1,4 @@
+![Web style guide screenshot](https://res.cloudinary.com/dqe0hw0ru/image/upload/v1565188004/sass_style_guide.png)
 # 🎨 Sass Web Style Guide
 ### Sass web style guide project for [Treehouse Front-End Techdegree](https://join.teamtreehouse.com/techdegree/)
 #### 📓 Instructor: Multiple - see Team Treehouse Front-end Techdegree link above
