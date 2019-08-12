@@ -15,7 +15,8 @@ My challenge for this project was to create rules to style a web page using a se
 * Sass
 
 ## How I'd like to improve this app:
-* Light refactoring of Sass classes, mixins, extends, and variables ☑️
+* Refactor Sass classes, mixins, extends, and variables ☑️
+* Create media query manager and clean up large media queries ☑️
 * Add Sass maps for UI colors ☑️
 * Use NPM to add browser prefixes ☑️
 
