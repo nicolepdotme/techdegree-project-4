@@ -20,4 +20,4 @@ My challenge for this project was to create rules to style a web page using a se
 * Add Sass maps for UI colors ☑️
 * Use NPM to add browser prefixes ☑️
 
-## See live demo: [Sass web style guide project](https://fervent-rosalind-79a4fb.netlify.com/)
+## See live demo: [Sass web style guide project](https://nicolepdotme.github.io/techdegree-project-4/)
